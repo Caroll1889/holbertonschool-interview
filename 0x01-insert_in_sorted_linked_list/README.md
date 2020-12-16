@@ -12,3 +12,6 @@
 
 * Prototype: listint_t *insert_node(listint_t **head, int number);
 * Return: the address of the new node, or NULL if it failed
+
+## :black_nib: Authors 
+**Diahan Hudgson**  -  [Caroll1889](https://github.com/Caroll1889)
