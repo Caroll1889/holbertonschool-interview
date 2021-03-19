@@ -43,13 +43,14 @@ def solution(board, col, n):
         if safe(board, i, col, n):
             board[i][col] = 1
             c = solution(board, col + 1, n) or c
-            board [i][col] = 0
+            board[i][col] = 0
     return c
 
+
 if __name__ == "__main__":
-    
+
     if sys.argv != 2:
-        print ('Usage: nqueens N')
+        print('Usage: nqueens N')
         sys.exit(1)
 
     try:
