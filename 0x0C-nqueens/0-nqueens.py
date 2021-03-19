@@ -30,6 +30,7 @@ def safe(board, row, col, n):
                     range(col, -1, -1)):
         if board[r][c] == 1:
             return False
+
     return True
 
 
@@ -49,20 +50,20 @@ def solution(board, col, n):
 
 if __name__ == "__main__":
 
-    if sys.argv != 2:
-        print('Usage: nqueens N')
-        sys.exit(1)
+    if len(sys.argv) != 2:
+        print("Usage: nqueens N")
+        exit(1)
 
     try:
         n = int(sys.argv[1])
 
     except TypeError():
         print('N must be a number')
-        sys.exit(1)
+        exit(1)
 
     if n < 4:
         print('N must be at least 4')
-        sys.exit(1)
+        exit(1)
 
     board = [[0 for i in range(n)] for j in range(n)]
     solution(board, 0, n)
