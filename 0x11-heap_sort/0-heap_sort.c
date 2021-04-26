@@ -9,11 +9,15 @@
  * Return: Nothing
  */
 
-void swap(int *arr, int i, int j, size_t r_size)
+void swap(int arr[], int i, int j, size_t r_size)
 {
 	int temp;
 
 	temp = arr[i];
+
+	if (arr[i] == arr[j])
+		return;
+
 	arr[i] = arr[j];
 	arr[j] = temp;
 	print_array(arr, r_size);
@@ -29,7 +33,7 @@ void swap(int *arr, int i, int j, size_t r_size)
  * Return: nothing
  */
 
-void heapify(int *arr, int size, int i, size_t r_size)
+void heapify(int arr[], int size, int i, size_t r_size)
 {
 	int max = i;
 	int left = 2 * i + 1;
