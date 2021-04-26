@@ -68,10 +68,10 @@ void heap_sort(int *array, size_t size)
 	if (!array || size < 2)
 		return;
 
-	for (i = size / 2 - 1; i >= 0; i--)
+	for (i = size / 2 - 1; i > - 1; i--)
 		heapify(array, size, i, r_size);
 
-	for (i = size - 1; i >= 0; i--)
+	for (i = size - 1; i > 0; i--)
 	{
 		swap(array, 0, i, r_size);
 		heapify(array, i, 0, r_size);
