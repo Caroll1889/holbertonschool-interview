@@ -56,7 +56,7 @@ int binary_search_recursion(int *array, int left, int right, int value)
 
 		if (array[middle] >= value)
 		{
-			return (binary_search_recursion(array, left, middle - 1, value));
+			return (binary_search_recursion(array, left, middle, value));
 		}
 
 		if (array[middle] <= value)
