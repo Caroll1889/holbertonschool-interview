@@ -38,6 +38,7 @@ int binary_search_recursion(int *array, int left, int right, int value)
 {
 	int middle;
 
+	print_arr(array, left, right);
 
 	if (left == right)
 	{
@@ -46,7 +47,6 @@ int binary_search_recursion(int *array, int left, int right, int value)
 
 	while (left <= right)
 	{
-		print_arr(array, left, right);
 		middle = left + (right - left) / 2;
 
 		if (array[middle] == value && array[middle - 1] != value)
