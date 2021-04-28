@@ -40,6 +40,11 @@ int binary_search_recursion(int *array, int left, int right, int value)
 
 	print_arr(array, left, right);
 
+	if (left == right)
+	{
+		return (-1);
+	}
+
 	if (right >= left)
 	{
 		middle = left + (right - left) / 2;
