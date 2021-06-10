@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * mergeCaller - function that calls merge to merge previously divided arrays
+ * mergeCall - function that calls merge to merge previously divided arrays
  * @array: data
  * @sub_array: Holder for array
  * @start: Start index
