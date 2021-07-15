@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""Island Perimeter"""
 
 def island(grid):
+    """Function that returns the perimeter of the island """
     land = 0
     for i in range(len(grid)):
         for j in range(len(grid[i])):
