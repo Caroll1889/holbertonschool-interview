@@ -2,7 +2,7 @@
 """Island Perimeter"""
 
 
-def island(grid):
+def island_perimeter(grid):
     """Function that returns the perimeter of the island """
     land = 0
     for i in range(len(grid)):
